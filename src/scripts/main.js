@@ -8,10 +8,15 @@ let hash = require('bespoke-hash')
 let prism = require('bespoke-prism')
 let multimedia = require('bespoke-multimedia')
 let extern = require('bespoke-extern')
+let progress = require('bespoke-progress')
+let backdrop = require('bespoke-backdrop')
 let nebula = require('bespoke-theme-nebula')
 
 // Bespoke.js
-bespoke.from({ parent: 'article.deck', slides: 'section' }, [
+bespoke.from({
+  parent: 'article.deck',
+  slides: 'section'
+}, [
   classes(),
   nav(),
   scale(),
@@ -19,6 +24,8 @@ bespoke.from({ parent: 'article.deck', slides: 'section' }, [
   hash(),
   prism(),
   multimedia(),
+  extern(bespoke),
   nebula(),
-  extern(bespoke)
-])
+  progress(),
+  backdrop(),
+]);

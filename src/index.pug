@@ -12,35 +12,54 @@ html
     article.deck
 
       section
-        h1 presentation-neural-network
-
+        h1 Machine Learning
+        img(src="images/machine-learning.gif")
+      
       section
-        h2 Images
-        img(src="images/bespoke-logo.jpg")
-
-      section
-        h2 Keyboard Interaction
-        h3 Powered by <a href="https://github.com/bespokejs/bespoke-keys">bespoke-keys</a>
-
-      section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/bespokejs/bespoke-touch">bespoke-touch</a>
-
-      section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/bespokejs/bespoke-scale">bespoke-scale</a>
-
-      section
-        h2 Bullet List
-        h3 Powered by <a href="https://github.com/bespokejs/bespoke-bullets">bespoke-bullets</a>
+        h2 Etat des lieux
+        h3 Les choses stylées qu'on fait aujourd'hui en machine learning
         ul.build.build-items
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
+          li <a href="https://www.youtube.com/user/keeroyz">Two Minute Paper</a>
+          li <a href="https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A">Siraj Raval</a>
 
       section
-        iframe(width="640", height="360", src="https://www.youtube.com/embed/AV3kYPutYfs?rel=0&amp;showinfo=0&amp;controls=0&amp;enablejsapi=1&amp;loop=1&amp;playlist=AV3kYPutYfs", frameborder="0", allowfullscreen, data-volume="0")
+        h2 Bref historique
+        ul.build.build-items
+          li 1950: Premières idées suites aux travaux de turing.
+          li 1980: Backpropagation
+          li 1990: Regain d'interêt et Big Data
+          
+      section
+        ul.build
+          li 2000: Vers l'infini et au-delà
+        img(src="images/machine-leaning-toystory.gif")
+        
+      section
+        h2 Recognition
+        ul.build.build-items
+          li
+            a(href="https://quickdraw.withgoogle.com/?locale=en_US#") Quickdraw ( doodles ) 
+          li 
+            a(href="https://www.talater.com/annyang/") Voice Recognition ( Annyang ) 
+            
+      section
+        h3 Optical Caracter Recognition ( OCR )
+        iframe(width="640",
+        height="360", src="https://www.youtube.com/embed/jWh0FaRRZC4?rel=0&showinfo=0&start=72", frameborder="0",
+        allow="autoplay; encrypted-media", allowfullscreen,
+        data-volume="0")
+      
+      section
+        h3 Image Recognition
+        .images-inline
+          img(src="images/visual-recognition.png")
+          img(src="images/tennis-recognition.png")
+        
+        
+        
 
+
+      // END
       section
         h2 Syntax Highlighting
         h3 Powered by <a href="https://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/PrismJS/prism">Prism</a>
